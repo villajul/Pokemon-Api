@@ -36,7 +36,7 @@ router.get("/", async (req, res) => {
       }
     } else {
       const result = await axios(
-        "https://pokeapi.co/api/v2/pokemon/?limit=300"
+        "https://pokeapi.co/api/v2/pokemon/?limit=100"
       )
         .then((r) => r.data)
         .then((r) => r.results);
